@@ -1,0 +1,91 @@
+// main: style.less
+
+.account-form {
+	position: absolute;
+	background: @white;
+	width: 516px;
+	height: 729px;
+	left: 972px;
+	top: 94px;
+	box-shadow: 0px 4px 20px rgba(40, 40, 40, 0.2);
+	border-radius: 4px;
+	padding: 76px 48px 57px;
+}
+
+.account-form__title {
+	color: @black;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 0.01em;
+}
+
+.account-form__input {
+	width: 420px;
+	height: 56px;
+	margin-bottom: 32px;
+	border: 1px solid @gray-light;
+	border-radius: 2px;
+	padding-left: 16px;
+	vertical-align: middle;
+	background: @white;
+	color: @black;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 24px;
+	outline: 0;
+	transition: border 0.1s linear;
+	
+	&:hover {
+		background: rgba(237, 238, 240, 0.1);
+	}
+
+	&:focus {
+		border-top: none;
+		border-left: none;	
+		border-right: none;
+		
+		& + .account-form__label {
+			font-size: 14px;
+			line-height: 20px;
+			transform: translateY(-25px);
+		}
+	}
+
+	&.filled {
+		border-top: none;
+		border-left: none;	
+		border-right: none;
+	}
+}
+
+.account-form__label {
+	position: absolute;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: @gray;
+	transition: transform 0.1s linear;
+	
+	&.account-form__label_name {
+		top: 219px;
+		left: 64px;
+	}
+
+	&.account-form__label_email {
+		top: 307px;
+		left: 64px;
+	}
+
+	&.account-form__label_password {
+		top: 395px;
+		left: 64px;
+	}
+
+	&.changed {
+		font-size: 14px;
+		line-height: 20px;
+		transform: translateY(-25px);
+	}
+}
