@@ -1,6 +1,6 @@
 // main: style.less
 
-.account-form {
+.login-form {
 	position: relative;
 	display: block;
 	background: @white;
@@ -16,15 +16,15 @@
 	}
 }
 
-.account-form__title {
+.login-form__title {
 	color: @black;
-	font-weight: 500;
+	font-family: 'RF Tone', sans-serif;
+	font-weight: bold;
 	font-size: 32px;
-	line-height: 40px;
-	letter-spacing: 0.01em;
+	line-height: 38px;
 }
 
-.account-form__input {
+.login-form__input {
 	width: 420px;
 	height: 56px;
 	margin-bottom: 32px;
@@ -41,7 +41,7 @@
 	transition: border 0.1s linear;
 	
 	&:last-of-type {
-		margin-bottom: 42px;
+		margin-bottom: 40px;
 	}
 
 	&:hover {
@@ -53,7 +53,7 @@
 		border-left: none;	
 		border-right: none;
 		
-		& + .account-form__label {
+		& + .login-form__label {
 			font-size: 14px;
 			line-height: 20px;
 			transform: translateY(-25px);
@@ -67,7 +67,7 @@
 	}
 }
 
-.account-form__label {
+.login-form__label {
 	position: absolute;
 	font-family: Roboto;
 	font-weight: normal;
@@ -75,19 +75,14 @@
 	line-height: 24px;
 	color: @gray;
 	transition: transform 0.1s linear;
-	
-	&.account-form__label_name {
+
+	&.login-form__label_email {
 		top: 219px;
 		left: 64px;
 	}
 
-	&.account-form__label_email {
+	&.login-form__label_password {
 		top: 307px;
-		left: 64px;
-	}
-
-	&.account-form__label_password {
-		top: 395px;
 		left: 64px;
 	}
 
@@ -98,37 +93,61 @@
 	}
 }
 
-.account-form__btn {
-	width: 223px;
-	height: 48px;
-	padding: 15px 0;
-	float: right;
+.login-form__text {
+	width: 100%;
+	font-size: 14px;
+	line-height: 20px;
 	text-align: center;
-	vertical-align: middle;
+	margin-bottom: 34px;
+}
+
+.login-form__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 420px;
+	height: 48px;
+	padding: 0;
+	margin-bottom: 16px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 20px;
 	color: @white;
 	letter-spacing: 0.02em;
-	background: @orange;
+	background: @VKnorm;
 	border: 0;
 	border-radius: 2px;
 	outline: 0;
-
-	&:disabled {
-	color: @gray;
-	background: @gray-light;
+	
+	&:hover,
+	&:active {
+		background: linear-gradient(0deg, rgba(40, 40, 40, 0.1), 
+		rgba(40, 40, 40, 0.1)), @VKnorm;
 	}
 
 	&:focus {
-		background: @orange;
-		color: @white;
+		border: 1px solid rgba(40, 40, 40, 0.2);
 	}
+	
+	&_fb {
+		background: @FBnorm;
+		padding-top: 4px;
+		margin-bottom: 0;
+		
+		&:hover,
+		&:active {
+			background: linear-gradient(0deg, rgba(40, 40, 40, 0.1), 
+			rgba(40, 40, 40, 0.1)), @FBnorm;
+		}
 
-	&:hover,
-	&:active {
-		background: linear-gradient(0deg, rgba(40, 40, 40, 0.1),
-		rgba(40, 40, 40, 0.1)), @orange;
-		color: @white;
-	}
+		&:focus {
+			border: 1px solid rgba(40, 40, 40, 0.1);
+		}
+	}	
 }
+
+.vk__icon,
+.fb__icon {
+	margin-right: 8px;
+}
+

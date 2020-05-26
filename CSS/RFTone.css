@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'RF Tone';
+    src: local('RF Tone Bold'), local('RF-Tone-Bold'),
+        url('RFTone-Bold.woff2') format('woff2'),
+        url('RFTone-Bold.woff') format('woff'),
+        url('RFTone-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

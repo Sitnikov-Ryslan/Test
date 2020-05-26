@@ -3,19 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/RFTone.css">
 	<link rel="stylesheet" href="CSS/style.css">
 	<title>Picom test</title>
 </head>
 <body>
-	<div class="intro" style="display: none">
+	<div class="intro">
 		<div class="preview">
 			<h3 class="preview__suptitle">picom</h3>
 			<img class="preview__logo" src="IMG/picom.png">
 			<h2 class="preview__subtitle">test</h2>
 		</div>
 	</div>
-	<div class="account">
-		<img class="account__logo" src="IMG/account_logo.png">
+	<div class="forms hidden">
+		<img class="forms__logo" src="IMG/account_logo.png">
 		<div class="account-form">
 			<h2 class="account-form__title">Создать учетную запись</h2>
 			<h3 class="account-form-subtitle">
@@ -29,13 +30,42 @@
 			<input class="account-form__input" id="account-password" type="password">
 			<label for="account-password" class="account-form__label account-form__label_password">Пароль*</label>
 			<div class="user-agreement">
-				<input type="checkbox">
-				<span>Я даю согласие на обработку персональных данных, указанных в условиях <a href="#">Пользовательского соглашения</a></span>
+				<input class="user-agreement__checkbox" id="agreement-checkbox" type="checkbox">
+				<label for="agreement-checkbox" class="user-agreement__label"></label>
+				<span>Я даю согласие на обработку персональных данных, указанных в условиях <a class="user-agreement__link" href="#">Пользовательского соглашения</a></span>
 			</div>
-			<button class="account-form__btn">Создать учетную запись</button>
+			<button class="account-form__btn" disabled>Создать учетную запись</button>
+		</div>
+		<div class="login-form hidden">
+			<h2 class="login-form__title">Войти в учетную запись</h2>
+			<h3 class="login-form-subtitle">
+				<span>Нет учетной записи?</span>
+				<a class="login-form-subtitle__link" href="#">Создать учетную запись</a>
+			</h3>
+			<input class="login-form__input" id="login-email" type="email">
+			<label for="login-email" class="login-form__label login-form__label_email">E-mail*</label>
+			<input class="login-form__input" id="login-password" type="password">
+			<label for="login-password" class="login-form__label login-form__label_password">Пароль*</label>
+			<div class="login-form-objects">
+				<a class="login-form-objects__link" href="#">Забыли пароль?</a>
+				<button class="login-form-objects__btn" disabled>Войти</button>
+			</div>
+			<div class="login-form__text">или с помощью</div>
+			<button class="login-form__btn login-form__btn_vk">
+				<img class="vk__icon" src="IMG/vk x5F alt 2.png">
+				Войти через ВКонтакте
+			</button>
+			<button class="login-form__btn login-form__btn_fb">
+				<img class="fb__icon" src="IMG/facebook 2.png">
+				Войти через Facebook
+			</button>
 		</div>
 	</div>
-<!-- <script src="JS/hide_preview.js"></script> -->
+<script src="JS/hide_preview.js"></script>
+<script src="JS/toggleForms.js"></script>
 <script src="JS/filled_account-inputs.js"></script>
+<script src="JS/enabled_account-btn.js"></script>
+<script src="JS/filled_login-inputs.js"></script>
+<script src="JS/enabled_login-btn.js"></script>
 </body>
 </html>
