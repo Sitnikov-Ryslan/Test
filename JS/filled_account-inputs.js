@@ -1,9 +1,9 @@
 let nameInput = document.getElementById('account-name');
-let nameLabel = document.querySelector('.account-form__label_name');
+let nameLabel = document.querySelector('.form_account__label_name');
 let emailInput = document.getElementById('account-email');
-let emailLabel = document.querySelector('.account-form__label_email');
+let emailLabel = document.querySelector('.form_account__label_email');
 let passwordInput = document.getElementById('account-password');
-let passwordLabel = document.querySelector('.account-form__label_password');
+let passwordLabel = document.querySelector('.form_account__label_password');
 
 nameInput.addEventListener('change', function() {
 	if (nameInput.value !== '') {

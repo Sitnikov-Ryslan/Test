@@ -16,6 +16,15 @@
 	&.hidden {
 		display: none;
 	}
+
+	@media @tablet {
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    background: @black;
+	    width: 100%;
+	    height: auto;
+	    min-height: 320px;
+	}
 }
 
 .forms__logo {
@@ -25,4 +34,12 @@
 	width: 161.83px;
 	height: 48px;
 	cursor: pointer;
+	
+	@media @tablet {
+		margin: 30px auto;
+	}
+
+	@media @mobile-sm {
+		margin: 20px auto;
+	}
 }

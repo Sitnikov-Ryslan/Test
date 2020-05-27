@@ -1,0 +1,26 @@
+// main: style.less
+
+.link {
+	color: @orange;
+	text-decoration: none;
+	margin-left: 5px;
+	
+	&:hover,
+	&:active,
+	&:focus {
+		color: @orange-dark;
+	}
+
+	&.user-agreement__link {
+		margin-left: 0;
+	}
+
+	&.login-form-objects__link {
+		margin-left: 0;
+		line-height: 24px;
+		
+		@media @mobile-sm {
+			font-size: 12px;
+		}
+	}
+}

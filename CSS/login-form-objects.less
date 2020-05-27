@@ -16,50 +16,8 @@
 		position: absolute;
 		top: 88px;
 	}
-}
 
-.login-form-objects__link {
-	color: @orange;
-	text-decoration: none;
-	line-height: 24px;
-	
-	&:hover,
-	&:active,
-	&:focus {
-		color: @orange-dark;
-	}
-}
-
-.login-form-objects__btn {
-	width: 198px;
-	height: 48px;
-	padding: 15px 0;
-	text-align: center;
-	vertical-align: middle;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 20px;
-	color: @white;
-	letter-spacing: 0.02em;
-	background: @orange;
-	border: 0;
-	border-radius: 2px;
-	outline: 0;
-
-	&:disabled {
-		color: @gray;
-		background: @gray-light;
-	}
-
-	&:focus {
-		background: @orange;
-		color: @white;
-	}
-
-	&:hover,
-	&:active {
-		background: linear-gradient(0deg, rgba(40, 40, 40, 0.1),
-		rgba(40, 40, 40, 0.1)), @orange;
-		color: @white;
+	@media @mobile {
+		justify-content: space-around;
 	}
 }

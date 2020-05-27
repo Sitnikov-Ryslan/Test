@@ -1,7 +1,7 @@
 let mailInput = document.getElementById('login-email');
-let mailLabel = document.querySelector('.login-form__label_email');
+let mailLabel = document.querySelector('.form_login__label_email');
 let passInput = document.getElementById('login-password');
-let passLabel = document.querySelector('.login-form__label_password');
+let passLabel = document.querySelector('.form_login__label_password');
 
 mailInput.addEventListener('change', function() {
 	if (mailInput.value !== '') {

@@ -1,5 +1,5 @@
 let checkbox = document.querySelector('.user-agreement__checkbox');
-let accountBtn = document.querySelector('.account-form__btn');
+let accountBtn = document.querySelector('.form_account__btn');
 let name = document.getElementById('account-name');
 let email = document.getElementById('account-email');
 let password = document.getElementById('account-password');
@@ -19,6 +19,8 @@ let isInputFull = function() {
 		});
 	}
 }
+
+isInputFull();
 
 checkbox.addEventListener('change', function() {
 	if (checkbox.checked && name.value !== '' &&
