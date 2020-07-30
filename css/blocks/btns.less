@@ -1,0 +1,106 @@
+// main: ../style.less
+
+.btn {
+	height: 48px;
+	padding: 15px 0;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: @white;
+	letter-spacing: 0.02em;
+	background: @orange;
+	border: 0;
+	border-radius: 2px;
+	outline: 0;
+	
+	&.form_account__btn {
+		width: 223px;
+		float: right;
+	}
+
+	&.login-form-objects__btn {
+		width: 198px;
+		
+		@media @mobile-sm {
+			width: 150px;
+		}
+	}
+
+	&:disabled {
+		color: @gray;
+		background: @gray-light;
+	}
+
+	&:focus {
+		background: @orange;
+		color: @white;
+	}
+
+	&:hover,
+	&:active {
+		background: linear-gradient(0deg, rgba(40, 40, 40, 0.1),
+		rgba(40, 40, 40, 0.1)), @orange;
+		color: @white;
+	}
+}
+
+.form_login-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 420px;
+	height: 48px;
+	padding: 0;
+	margin-bottom: 16px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: @white;
+	letter-spacing: 0.02em;
+	background: @VKnorm;
+	border: 0;
+	border-radius: 2px;
+	outline: 0;
+	
+	&_vk {
+		background: @VKnorm;
+		margin-bottom: 16px;
+		
+		&:hover,
+		&:active {
+			background: linear-gradient(0deg, rgba(40, 40, 40, 0.1), 
+			rgba(40, 40, 40, 0.1)), @VKnorm;
+		}
+
+		&:focus {
+			border: 1px solid rgba(40, 40, 40, 0.2);
+		}
+	}
+	
+	&_fb {
+		background: @FBnorm;
+		padding-top: 4px;
+		margin-bottom: 0;
+		
+		&:hover,
+		&:active {
+			background: linear-gradient(0deg, rgba(40, 40, 40, 0.1), 
+			rgba(40, 40, 40, 0.1)), @FBnorm;
+		}
+
+		&:focus {
+			border: 1px solid rgba(40, 40, 40, 0.1);
+		}
+	}	
+
+	@media @mobile {
+		width: 100%;
+	}
+}
+
+.vk__icon,
+.fb__icon {
+	margin-right: 8px;
+}

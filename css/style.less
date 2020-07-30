@@ -1,0 +1,40 @@
+@import "vars.less";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@font-face {
+    font-family: 'RF Tone';
+    src: local('RF Tone Bold'), local('RF-Tone-Bold'),
+        url('RFTone/RFTone-Bold.woff2') format('woff2'),
+        url('RFTone/RFTone-Bold.woff') format('woff'),
+        url('RFTone/RFTone-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: @gray;
+	margin: 0;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	color: @black;
+}
+
+@import "blocks/intro.less";
+@import "blocks/preview.less";
+@import "blocks/forms.less";
+@import "blocks/form.less";
+@import "blocks/formSubtitle.less";
+@import "blocks/btns.less";
+@import "blocks/links.less";
+@import "blocks/userAgreement.less";
+@import "blocks/loginFormObjects.less";

@@ -1,0 +1,208 @@
+// main: ../style.less
+
+.form {
+	position: relative;
+	display: block;
+	background: @white;
+	width: 516px;
+	height: 729px;
+	margin-top: 94px;
+	box-shadow: 0px 4px 20px rgba(40, 40, 40, 0.2);
+	border-radius: 4px;
+	padding: 76px 48px 57px;
+	
+	&.hidden {
+		display: none;
+	}
+
+	@media @tablet {
+		margin: 0 auto;
+	}
+
+	@media @mobile {
+		width: 100%;
+		padding: 25px 10px;
+		text-align: center;
+	}
+
+	@media @mobile-sm {
+		padding: 15px 10px;
+	}
+}
+
+.form__title {
+	color: @black;
+	font-size: 32px;
+	
+	&.form_account__title {
+		font-weight: 500;
+		line-height: 40px;
+		letter-spacing: 0.01em;
+	}
+
+	&.form_login__title {
+		font-family: 'RF Tone', sans-serif;
+		font-weight: bold;
+		line-height: 38px;
+		
+		@media @mobile {
+			font-size: 28px;
+		}
+
+		@media @mobile {
+			font-size: 24px;
+		}
+	}
+
+	@media @mobile {
+		font-size: 26px;
+	}
+
+	@media @mobile-sm {
+		font-size: 22px;
+	}
+}
+
+.form__input {
+	width: 420px;
+	height: 56px;
+	margin-bottom: 32px;
+	border: 1px solid @gray-light;
+	border-radius: 2px;
+	padding-left: 16px;
+	vertical-align: middle;
+	background: @white;
+	color: @black;
+	font-family: Roboto;
+	font-size: 16px;
+	line-height: 24px;
+	outline: 0;
+	
+	&.form_account__input:last-of-type {
+		margin-bottom: 42px;
+	}
+
+	&.form_login__input:last-of-type {
+		margin-bottom: 40px;
+	}
+
+	&:hover {
+		background: rgba(237, 238, 240, 0.1);
+	}
+
+	&:focus {
+		border-top: none;
+		border-left: none;	
+		border-right: none;
+		
+		& + .form__label {
+			font-size: 14px;
+			line-height: 20px;
+			transform: translateY(-25px);
+		}
+	}
+
+	&.filled {
+		border-top: none;
+		border-left: none;	
+		border-right: none;
+	}
+
+	@media @mobile {
+		width: 100%;
+	}
+}
+
+.form__label {
+	position: absolute;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: @gray;
+	transition: transform 0.1s linear;
+	
+	&.form_account__label_name {
+		top: 219px;
+		left: 64px;
+		
+		@media @mobile {
+			top: 150px;
+			left: 26px;
+		}
+
+		@media @mobile-sm {
+			top: 140px;
+		}
+	}
+
+	&.form_account__label_email {
+		top: 307px;
+		left: 64px;
+		
+		@media @mobile {
+			top: 238px;
+			left: 26px;
+		}
+
+		@media @mobile-sm {
+			top: 228px;
+		}
+	}
+
+	&.form_account__label_password {
+		top: 395px;
+		left: 64px;
+		
+		@media @mobile {
+			top: 325px;
+			left: 26px;
+		}
+
+		@media @mobile-sm {
+			top: 315px;
+		}
+	}
+
+	&.form_login__label_email {
+		top: 219px;
+		left: 64px;
+		
+		@media @mobile {
+			top: 150px;
+			left: 26px;
+		}
+
+		@media @mobile-sm {
+			top: 140px;
+		}
+	}
+
+	&.form_login__label_password {
+		top: 307px;
+		left: 64px;
+		
+		@media @mobile {
+			top: 238px;
+			left: 26px;
+		}
+
+		@media @mobile-sm {
+			top: 228px;
+		}
+	}
+	
+	&.changed {
+		font-size: 14px;
+		line-height: 20px;
+		transform: translateY(-25px);
+	}
+}
+
+.form_login__text {
+	width: 100%;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	margin-bottom: 34px;
+}

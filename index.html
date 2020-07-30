@@ -3,18 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="IMG/favicons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="IMG/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="IMG/favicons/favicon-16x16.png">
-	<link rel="manifest" href="IMG/favicons/site.webmanifest">
-	<link rel="mask-icon" href="IMG/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="google" content="notranslate">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="CSS/RFTone.css">
-	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Picom test</title>
 </head>
@@ -22,13 +20,13 @@
 	<div class="intro">
 		<div class="preview">
 			<h3 class="preview__suptitle">picom</h3>
-			<img class="preview__logo" src="IMG/picom.png">
+			<img class="preview__logo" src="img/picom.png" alt="PicomLogo">
 			<h2 class="preview__subtitle">test</h2>
 		</div>
 	</div>
 
 	<div class="forms hidden">
-		<img class="forms__logo" src="IMG/account_logo.png">
+		<img class="forms__logo" src="img/account_logo.png" alt="smallPicomLogo">
 		
 		<form class="form form_account">
 			<h2 class="form__title form_account__title">Создать учетную запись</h2>
@@ -43,7 +41,7 @@
 			<input class="form__input form_account__input" id="account-password" name="accountPassword" type="password" autocomplete="off" maxlength="72" required>
 			<label for="account-password" class="form__label form_account__label_password">Пароль*</label>
 			<div class="user-agreement">
-				<input class="user-agreement__checkbox" id="agreement-checkbox" type="checkbox">
+				<input class="user-agreement__checkbox" id="agreement-checkbox" type="checkbox" checked>
 				<label for="agreement-checkbox" class="user-agreement__label"></label>
 				<span>Я даю согласие на обработку персональных данных, указанных в условиях <a class="link user-agreement__link" href="#">Пользовательского соглашения</a></span>
 			</div>
@@ -66,20 +64,15 @@
 			</div>
 			<div class="form_login__text">или с помощью</div>
 			<button class="form_login-btn form_login-btn_vk">
-				<img class="vk__icon" src="IMG/vk x5F alt 2.png">
+				<img class="vk__icon" src="img/vk x5F alt 2.png" alt="vk">
 				Войти через ВКонтакте
 			</button>
 			<button class="form_login-btn form_login-btn_fb">
-				<img class="fb__icon" src="IMG/facebook 2.png">
+				<img class="fb__icon" src="img/facebook 2.png" alt="fb">
 				Войти через Facebook
 			</button>
 		</form>
 	</div>
-<script src="JS/hide_preview.js"></script>
-<script src="JS/toggleForms.js"></script>
-<script src="JS/filled_account-inputs.js"></script>
-<script src="JS/enabled_account-btn.js"></script>
-<script src="JS/filled_login-inputs.js"></script>
-<script src="JS/enabled_login-btn.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

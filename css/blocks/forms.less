@@ -1,0 +1,45 @@
+// main: ../style.less
+
+.forms {
+	background: linear-gradient(180deg, rgba(40, 40, 40, 0.8) 11.34%, 
+	rgba(40, 40, 40, 0.2) 94.66%), linear-gradient(0deg, rgba(40, 40, 40, 0.5), 
+	rgba(40, 40, 40, 0.5)), url(../../img/bg.jpg) center no-repeat;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	min-height: 916px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	display: flex;
+	
+	&.hidden {
+		display: none;
+	}
+
+	@media @tablet {
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    background: @black;
+	    width: 100%;
+	    height: auto;
+	    min-height: 320px;
+	}
+}
+
+.forms__logo {
+	margin-top: 300px;
+	margin-left: 327px;
+	margin-right: 483.17px;
+	width: 161.83px;
+	height: 48px;
+	cursor: pointer;
+	
+	@media @tablet {
+		margin: 30px auto;
+	}
+
+	@media @mobile-sm {
+		margin: 20px auto;
+	}
+}
