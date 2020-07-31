@@ -98,7 +98,7 @@ h6 {
   line-height: 25px;
 }
 .forms {
-  background: linear-gradient(180deg, rgba(40, 40, 40, 0.8) 11.34%, rgba(40, 40, 40, 0.2) 94.66%), linear-gradient(0deg, rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url(../../img/bg.jpg) center no-repeat;
+  background: linear-gradient(180deg, rgba(40, 40, 40, 0.8) 11.34%, rgba(40, 40, 40, 0.2) 94.66%), linear-gradient(0deg, rgba(40, 40, 40, 0.5), rgba(40, 40, 40, 0.5)), url(../img/bg.jpg) center no-repeat;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -373,6 +373,7 @@ h6 {
   padding: 15px 0;
   text-align: center;
   vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -409,13 +410,11 @@ h6 {
   color: #fff;
 }
 .form_login-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 420px;
   height: 48px;
   padding: 0;
   margin-bottom: 16px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -437,9 +436,18 @@ h6 {
 .form_login-btn_vk:focus {
   border: 1px solid rgba(40, 40, 40, 0.2);
 }
+.form_login-btn_vk span {
+  display: inline-block;
+  background: url(../img/vk\ x5F\ alt\ 2.svg) no-repeat left center;
+  padding-left: 36px;
+}
+@media (max-width: 767px) {
+  .form_login-btn_vk span {
+    padding-top: 3px;
+  }
+}
 .form_login-btn_fb {
   background: #3B5998;
-  padding-top: 4px;
   margin-bottom: 0;
 }
 .form_login-btn_fb:hover,
@@ -449,14 +457,17 @@ h6 {
 .form_login-btn_fb:focus {
   border: 1px solid rgba(40, 40, 40, 0.1);
 }
+.form_login-btn_fb span {
+  display: inline-block;
+  background: url(../img/facebook\ 2.svg) no-repeat left center;
+  height: 25px;
+  padding-left: 24px;
+  padding-top: 3px;
+}
 @media (max-width: 575px) {
   .form_login-btn {
     width: 100%;
   }
-}
-.vk__icon,
-.fb__icon {
-  margin-right: 8px;
 }
 .link {
   color: #E0431E;
